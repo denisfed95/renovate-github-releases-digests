@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
 # renovate: datasource=github-releases depName=terraform-docs/terraform-docs versioning=semver
-ARG TERRAFORM_DOCS_VERSION="v0.15.0"
-ARG TERRAFORM_DOCS_CHECKSUM="e0b399d9dc2eb97853a7e12f1ae678e7160cae4c811646ce70169a8d611f6cf9"
+ARG TERRAFORM_DOCS_VERSION="v0.24.0"
+ARG TERRAFORM_DOCS_CHECKSUM="9d4455198941806aa02ec14369de030cda2c2b59"
 RUN curl -LO https://github.com/terraform-docs/terraform-docs/releases/download/${TERRAFORM_DOCS_VERSION}/terraform-docs-${TERRAFORM_DOCS_VERSION}-linux-amd64.tar.gz
