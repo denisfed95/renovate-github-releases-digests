@@ -1,8 +1,8 @@
 FROM ubuntu:22.04
 
 # renovate: datasource=github-releases depName=hashicorp/terraform versioning=semver
-ARG TERRAFORM_VERSION="v1.3.5"
-ARG TERRAFORM_CHECKSUM="ac28037216c3bc41de2c22724e863d883320a770056969b8d211ca8af3d477cf"
+ARG TERRAFORM_VERSION="v1.16.3"
+ARG TERRAFORM_CHECKSUM="42121cd5ca5e1ab1d37e286540ce11acf70e290a"
 
 RUN export TERRAFORM_FIXED_VERSION=$(echo ${TERRAFORM_VERSION} | sed 's/v//'); \
     && curl -LO /usr/local/bin/terraform https://releases.hashicorp.com/terraform/${TERRAFORM_FIXED_VERSION}/terraform_${TERRAFORM_FIXED_VERSION}_linux_amd64.zip \
