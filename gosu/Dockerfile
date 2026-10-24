@@ -1,4 +1,4 @@
-FROM alpine:3.14.0
+FROM alpine:3.24.3
 RUN apk --no-cache add curl
 
 # https://github.com/tianon/gosu/releases
